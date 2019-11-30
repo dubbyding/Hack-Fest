@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class = "Head">
+   <a href = "index.html"><img src = "logo.png" width = 60px height = 60px></a> 
+</div>
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="profile.html">Profile</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+<div class="contain">
+    <div class="displayImg">
+        <img src="1.jpg" width=400px height = 500 px>
+    </div>
+    <div class="displayProfile">
+        <a href="profile.html"><img src="1auth.jpg" width = 150px height = 200px></a><Br>
+        Leonardo Da Vinci
+    </div>
+</div>
+<div class="description">
+<h1>Monalisa</h1>
+<p>
+Leonardo is renowned primarily as a painter. <br>
+The Mona Lisa is the most famous of his works <br>
+and the most popular portrait ever made.<br>
+The Last Supper is the most reproduced <br>
+religious painting of all time and his <br>
+Vitruvian Man drawing is regarded as a <br>
+cultural icon as well.Salvator Mundi was sold <br>
+for a world record $450.3 million at a <br>
+Christie's auction in New York, 15 November 2017, <br>
+the highest price ever paid for a work of art.<br>
+</p>
+</div>
+<br />
+    <h2 align="left"><a href="#">Comment Section</a></h2>
+    <br />
+    <div class="container">
+        <form method="POST" id="comment_form">
+            <div class="form-group">
+                <input type="text" name="comment_name" id="comment_name" class="form-control"
+                    placeholder="Enter Name" />
+            </div>
+            <div class="form-group">
+                <textarea name="comment_content" id="comment_content" class="form-control" placeholder="Enter Comment"
+                    rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="hidden" name="comment_id" id="comment_id" value="0" />
+                <input type="submit" name="submit" id="submit" class="btn btn-info" value="Submit" />
+            </div>
+        </form>
+        <span id="comment_message"></span>
+        <br />
+        <div id="display_comment"></div>
+    </div>
+</body>
+</html>
